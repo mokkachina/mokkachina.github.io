@@ -184,10 +184,10 @@ body{
         left: 15px;
     }
 
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
+    /* !*Make all right containers behave like the left ones *!*/
+    /*.right {*/
+    /*    left: 0%;*/
+    /*}*/
 }
 
 .collapsible {
@@ -211,4 +211,15 @@ body{
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
