@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img  src="/art/img/logo.png" alt="Логотип сайта" width="50" height="50">
+    </div>
+
+    <div>
+
+       <dl class="site-menu">
+
+       <dt id="about"><a href="index.html">Обо мне</a></dt>
+           <dd></dd>
+        <dt id="prog"><a href="progress.html">Мои достижения</a></dt>
+           <dd></dd>
+        <dt id="cont"><a href="contacts.html">Контакты</a></dt>
+       </dl>
+    </div>
+</header>
+<h1>Не много обо мне</h1>
+<button type="button" class="collapsible">Обо мне</button>
+<p><img class="einstein" src="/art/img/Albert_Einstein.jpg" alt="Моя фотография" width="250" height="350">Альбе́рт Эйнште́йн (родился 14 марта 1879, Ульм, королевство Вюртемберг, Германская империя — 18 апреля 1955,
+    Принстон, штат Нью-Джерси, США) — американский, немецкий и швейцарский физик-теоретик и общественный деятель-гуманист,
+    один из основателей современной теоретической физики. Лауреат Нобелевской премии по физике 1921 года.
+    Его теория относительности изменила основания физики, заменив классическую механику и закон всемирного тяготения Ньютона.
+    Персона XX века по версии журнала Time.</p>
+</body>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let context = this.nextElementSibling;
+            if (context.style.display === "block") {
+                context.style.display = "none";
+            } else {
+                context.style.display = "block";
+            }
+        });
+    }
+</script>
+</html>
