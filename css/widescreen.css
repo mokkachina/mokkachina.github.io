@@ -192,7 +192,7 @@ body{
 
 .collapsible {
     background-color: #eee;
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -237,7 +237,7 @@ body{
 }
 
 /* Add some padding inside the card container */
-.cont {
+.conts {
     padding: 2px 16px;
 }
 .card {
